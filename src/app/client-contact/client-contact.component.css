@@ -1,0 +1,85 @@
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.contact-section h2 {
+  color: #ff6f00;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.contact-section p {
+  color: #757575;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-section .form-control {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #00aaff;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+  border-color: #ff6f00;
+  box-shadow: 0 0 10px rgba(255, 111, 0, 0.2);
+}
+
+.contact-section .btn-submit {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section .btn-submit:hover {
+  background-color: #ff6f00;
+  color: #fff;
+}
+
+.contact-section .contact-info p {
+  color: #424242;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact-section .contact-info strong {
+  color: #ff6f00;
+}
+
+.footer-section {
+  background-color: #333; /* Couleur de fond sombre */
+  color: #fff; /* Texte blanc pour contraste */
+  padding: 20px 0; /* Padding pour le haut et le bas */
+}
+
+.footer-section .contact-info p {
+  margin-bottom: 0; /* Annule les marges en bas */
+  font-size: 1rem; /* Taille de texte pour les informations de contact */
+}
+
+.footer-section .contact-info p strong {
+  color: #ff6f00; /* Couleur orange pour les titres */
+}
+
+.footer-section .contact-info {
+  display: flex; /* Affiche les éléments sur une seule ligne */
+  flex-wrap: wrap; /* Permet aux éléments de se déplacer à la ligne suivante sur les écrans plus petits */
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Aligner les éléments verticalement */
+}
+
+.footer-section .contact-info p.mx-4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}

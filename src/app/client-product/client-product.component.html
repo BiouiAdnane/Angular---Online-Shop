@@ -1,0 +1,81 @@
+<div class="bg-light">
+  <div class="">
+    <div class="row w-100">
+      <!-- Menu de filtrage à droite -->
+      <div class="col-md-3 pt-5">
+        <h3 class="text-center">Filtrer les produits</h3>
+        <div class="mb-3 mt-4">
+          <label for="filterName" class="form-label h5">Nom du produit</label>
+          <input type="text" id="filterName" class="form-control" placeholder="Nom du produit" (input)="filterProductsByNameEvent($event)">
+        </div>
+        <div class="mb-3">
+          <label for="filterPrice1" class="form-label h5">Prix minimum</label>
+          <input type="number" id="filterPrice1" class="form-control" placeholder="Prix minimum" (input)="filterProductsByPriceDownEvent($event)">
+        </div>
+        <div class="mb-3">
+          <label for="filterPrice2" class="form-label h5">Prix maximum</label>
+          <input type="number" id="filterPrice2" class="form-control" placeholder="Prix maximum" (input)="filterProductsByPriceUpEvent($event)">
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="filterPromotion" (change)="filterProductsByPromotionEvent($event)">
+          <label class="form-check-label h5" for="filterPromotion">
+            En promotion
+          </label>
+        </div>
+        <!-- Filtrer par catégorie -->
+        <div class="mb-3">
+          <label for="filterCategory" class="form-label h5">Catégorie</label>
+          <select id="filterCategory" class="form-select" (change)="filterProductsByCategoryEvent($event)">
+            <option value="">Toutes les catégories</option>
+            <option value="Électronique">Électronique</option>
+            <option value="Meubles">Meubles</option>
+            <option value="Sport">Sport</option>
+            <option value="Jouets">Jouets</option>
+          </select>
+        </div>
+        <!-- Bouton de réinitialisation -->
+        <div class="text-center">
+          <button class="btn btn-secondary mt-4" (click)="resetFilters()">Réinitialiser</button>
+        </div>
+      </div>
+
+
+      <!-- Liste des produits -->
+      <div class="col-md-9 pt-5">
+        <div class="row">
+          <div *ngFor="let product of displayedProducts" class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img [src]="'assets/' + product.name.toLowerCase() + '.png'" class="card-img-top" alt="{{product.name}}">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{product.name}}</h5>
+                <div class="row d-flex justify-content-around mt-3">
+                  <p class="card-text text-success col-md-6 text-center">Prix : {{product.price}} €</p>
+                  <p *ngIf="product.promotion" class="badge bg-danger col-md-4">En promotion</p>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-sm mt-3" (click)="viewProductDetails(product.id)">Voir Détails</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item" [class.disabled]="currentPage === 1">
+              <a class="page-link" href="#" (click)="changePage(currentPage - 1)">Précédent</a>
+            </li>
+            <li class="page-item" *ngFor="let page of pages" [class.active]="currentPage === page">
+              <a class="page-link" href="#" (click)="changePage(page)">{{page}}</a>
+            </li>
+            <li class="page-item" [class.disabled]="currentPage === totalPages">
+              <a class="page-link" href="#" (click)="changePage(currentPage + 1)">Suivant</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</div>

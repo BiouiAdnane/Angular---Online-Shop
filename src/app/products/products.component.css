@@ -1,0 +1,26 @@
+.input-group-text {
+  background: rgba(253,56,20,1);
+
+}
+.card-header{
+  background: linear-gradient(90deg, rgba(253,56,20,1) 0%, rgba(238,152,22,1) 37%, rgba(36,202,235,1) 100%);
+}
+
+.btn-info1{
+  background:rgba(238,152,22,1) ;
+  color: white;
+}
+
+.btn-outline-info1{
+  color: rgba(238,152,22,1);
+  border: solid 2px rgba(238,152,22,1);
+}
+
+.btn-outline-info1:hover{
+  color: white;
+  background: rgba(238,152,22,1);
+}
+
+.bi-patch-check-fill{
+  font-size: 1.5rem;
+}

@@ -1,0 +1,111 @@
+<div class="bg-light">
+  <div class="container pt-5 pb-3">
+    <div class="row">
+      <!-- Image du produit à gauche -->
+      <div class="col-md-6 text-center">
+        <div class="image-container p-4">
+          <img [src]="'assets/' + product.name + '.png'" alt="{{product.name}}" class="img-fluid product-image">
+        </div>
+        <!-- Section des avis clients -->
+        <div class="reviews-container mt-5 text-start rounded-4">
+          <h4>Évaluations des clients</h4>
+          <div class="review">
+            <span class="stars">★★★★☆</span>
+            <p>"Super produit, je suis très satisfait!" - Jean D.</p>
+          </div>
+          <div class="review">
+            <span class="stars">★★★☆☆</span>
+            <p>"Bon rapport qualité-prix, mais la livraison était un peu lente." - Marie P.</p>
+          </div>
+          <a href="#" class="btn btn-link">Voir tous les avis</a>
+        </div>
+        <!-- Section des produits similaires -->
+        <div class="related-products mt-5">
+          <h4>Produits Similaires</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img src="assets/avion.png" class="card-img-top" alt="Produit similaire">
+                <div class="card-body">
+                  <h5 class="card-title">Avion</h5>
+                  <p class="card-text">Jouet pour enfant entre 3 et 7 ans.</p>
+                  <a href="#" class="btn btn-primary">Voir le produit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img src="assets/train.png" class="card-img-top" alt="Produit similaire">
+                <div class="card-body">
+                  <h5 class="card-title">Train</h5>
+                  <p class="card-text">Jouet pour enfant entre 6 et 12 ans.</p>
+                  <a href="#" class="btn btn-primary">Voir le produit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Informations du produit à droite -->
+      <div class="col-md-6">
+        <div class="info-container p-4">
+          <div class="row d-flex">
+            <div class="col-md-9">
+              <h2>{{product.name}}</h2>
+            </div>
+            <div class="col-md-3">
+              <h6 *ngIf="product.promotion" class="promotion">En promotion</h6>
+            </div>
+          </div>
+
+          <p class="mt-3" [innerHTML]="product.description | nl2br"></p>
+
+          <div class="row text-center">
+            <div class="col-md-6">
+              <h4 class="category">Catégorie : {{product.category}}</h4>
+            </div>
+            <div class="col-md-6">
+              <h4 class="price">Prix : {{product.price}} €</h4>
+            </div>
+          </div>
+
+
+
+          <!-- Sélection de la quantité -->
+          <div class="row mt-5">
+            <div class="col-md-6"><label for="quantity" class="form-label">Quantité</label></div>
+            <div class="col-md-6"><input type="number" id="quantity" class="form-control" min="1" value="1"></div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-6"><label class="form-label">Couleur</label></div>
+            <div class="col-md-6">
+              <div class="color-options d-flex">
+                <div class="color-tile" [ngClass]="{'selected': selectedColor === 'red'}" (click)="selectColor('red')" style="background-color: red;"></div>
+                <div class="color-tile" [ngClass]="{'selected': selectedColor === 'blue'}" (click)="selectColor('blue')" style="background-color: blue;"></div>
+                <div class="color-tile" [ngClass]="{'selected': selectedColor === 'green'}" (click)="selectColor('green')" style="background-color: green;"></div>
+                <div class="color-tile" [ngClass]="{'selected': selectedColor === 'black'}" (click)="selectColor('black')" style="background-color: black;"></div>
+                <div class="color-tile" [ngClass]="{'selected': selectedColor === 'white'}" (click)="selectColor('white')" style="background-color: white; border: 1px solid #ccc;"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Bouton d'ajout au panier -->
+          <div class="mt-4 add-to-cart-container">
+            <button class="btn btn-primary1 btn-lg w-100">Ajouter au panier</button>
+          </div>
+
+          <!-- Section des options de livraison et retours -->
+          <div class="shipping-returns mt-5">
+            <h4>Livraison et Retours</h4>
+            <p>Livraison sous 3-5 jours ouvrables. Retours acceptés sous 30 jours. <a href="#">Voir les détails</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,141 @@
+<div class="container pt-5 bg-light">
+  <!-- Section Promotions Été -->
+  <div class="row pb-5">
+    <div class="col-12 text-center">
+      <h2 class="display-4">Promotions de l'été 🌞</h2>
+      <img src="assets/ete.png" class="rounded w-100 mb-4" alt="Promotions d'été">
+      <p class="lead">Profitez des meilleures offres de l'été ! Des réductions exceptionnelles sur une large gamme de produits pour rafraîchir votre maison et votre style.</p>
+      <p class="lead">Nos partenaires vous offrent des remises exclusives sur l'électronique, les meubles, et bien plus encore. Ne manquez pas ces opportunités uniques pour faire des économies tout en améliorant votre quotidien.</p>
+
+      <!-- Icons des partenaires ou catégories -->
+      <div class="row justify-content-center">
+        <div class="col-md-2">
+          <div class="icon-container">
+            <img src="assets/xiaomi.png" class="img-fluid" alt="Mobile">
+            <p>Mobile</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="icon-container">
+            <img src="assets/whirlpool.png" class="img-fluid" alt="Électroménager">
+            <p>Électroménager</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="icon-container">
+            <img src="assets/ikea.png" class="img-fluid" alt="Meubles">
+            <p>Meubles</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="icon-container">
+            <img src="assets/dell.png" class="img-fluid" alt="Informatique">
+            <p>Informatique</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="icon-container">
+            <img src="assets/dior.png" class="img-fluid" alt="Mode">
+            <p>Mode</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section Soldes 30% -->
+  <div class="row mb-5">
+    <div class="col-12 text-center">
+      <h2 class="display-4 bg-light w-100">Soldes -30% dans l'Électronique 📱</h2>
+      <p class="lead bg-light">Profitez de -30% sur une sélection de produits.</p>
+      <img src="assets/30prct.png" class="img-fluid rounded w-100" alt="Soldes 30%">
+    </div>
+  </div>
+
+
+
+  <!-- Section des Produits en Promotion par Catégorie -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="row">
+        <div *ngFor="let product of electronicProducts" class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img [src]="'assets/' + product.name.toLowerCase() + '.png'" class="card-img-top" alt="{{product.name}}">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{product.name}}</h5>
+              <div class="row d-flex justify-content-around mt-3">
+                <p class="card-text text-success col-md-6 text-center">Prix : {{product.price}} €</p>
+                <p *ngIf="product.promotion" class="badge bg-danger col-md-4">En promotion</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary" (click)="viewProductDetails(product)">Voir Détails</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Soldes 50% -->
+  <div class="row mb-5">
+    <div class="col-12 text-center">
+      <h2 class="display-4">Soldes -50% dans l'Meubles 🛋️</h2>
+      <p class="lead">Jusqu'à -50% sur une large gamme de produits.</p>
+      <img src="assets/50prct.png" class="img-fluid rounded w-100" alt="Soldes 50%">
+    </div>
+  </div>
+  <!-- Répéter la même structure pour les autres catégories -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="row">
+        <div *ngFor="let product of furnitureProducts" class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img [src]="'assets/' + product.name.toLowerCase() + '.png'" class="card-img-top" alt="{{product.name}}">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{product.name}}</h5>
+              <div class="row d-flex justify-content-around mt-3">
+                <p class="card-text text-success col-md-6 text-center">Prix : {{product.price}} €</p>
+                <p *ngIf="product.promotion" class="badge bg-danger col-md-4">En promotion</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary" (click)="viewProductDetails(product)">Voir Détails</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Soldes 80% -->
+  <div class="row mb-5">
+    <div class="col-12 text-center">
+      <h2 class="display-4">Soldes -80% dans les Jouets 🚴‍♂️</h2>
+      <p class="lead">Jusqu'à -80% sur une sélection exclusive.</p>
+      <img src="assets/80prct.png" class="img-fluid rounded w-100" alt="Soldes 80%">
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="row ">
+        <div *ngFor="let product of toysProducts" class="col-md-4 mb-4 ">
+          <div class="card h-100">
+            <img [src]="'assets/' + product.name.toLowerCase() + '.png'" class="card-img-top" alt="{{product.name}}">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{product.name}}</h5>
+              <div class="row d-flex justify-content-around mt-3">
+                <p class="card-text text-success col-md-6 text-center">Prix : {{product.price}} €</p>
+                <p *ngIf="product.promotion" class="badge bg-danger col-md-4">En promotion</p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary" (click)="viewProductDetails(product)">Voir Détails</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

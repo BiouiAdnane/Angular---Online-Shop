@@ -1,0 +1,32 @@
+<div class="container bg-light">
+  <div class="col-md-6  offset-md-3">
+    <div class="text-center mb-4">
+      <!-- Ajout du logo -->
+      <img src="assets/logo-shop.png" alt="Logo du site" class="mb-3 mt-3" style="width: 150px;">
+      <h3 class="text-muted">Online Shop</h3>
+      <!-- Texte de bienvenue -->
+      <h2 class="mt-5">Bienvenue sur notre boutique en ligne</h2>
+      <p class="text-muted">Connectez-vous pour accéder à vos achats préférés !</p>
+    </div>
+    <div class="card shadow">
+      <div class="card-header text-center bg-primary text-white">Authentification</div>
+      <div class="text-danger text-center mt-2" *ngIf="errMessage">{{errMessage}}</div>
+      <div class="card-body p-4">
+        <form [formGroup]="userFormGroup" (ngSubmit)="handleLogin()">
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="bi bi-person"></i></span>
+            <input type="text" formControlName="username" class="form-control" placeholder="Nom d'utilisateur">
+          </div>
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+            <input type="password" formControlName="password" class="form-control" placeholder="Mot de passe">
+          </div>
+          <button class="btn btn-success col-md-4 offset-4 mt-3" type="submit">Se connecter</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p class="text-muted">Pas encore de compte ? <a href="#" class="text-primary-link">Inscrivez-vous ici</a></p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+/* Styles pour le container principal */
+.container {
+  height: 100vh;
+  max-width: 80%;
+}
+
+/* Card shadow */
+.card.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Texte de bienvenue */
+.text-center h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Logo */
+img.mb-3 {
+  border-radius: 10px;
+}
+
+/* Header de la carte */
+.card-header {
+  background: linear-gradient(90deg, rgba(253,56,20,1) 0%, rgba(238,152,22,1) 37%, rgba(36,202,235,1) 100%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text-primary-link{
+  color: rgba(238,152,22,1);
+}
+
+/* Style des input groups */
+.input-group-text {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  color: #495057;
+}
+
+/* Champs du formulaire */
+.form-control {
+  height: 45px;
+  border-radius: 0.25rem;
+}
+
+/* Bouton de connexion */
+.btn-success {
+
+  background-color: rgba(238,152,22,1);
+  border-color: rgba(253,56,20,1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: rgba(253,56,20,1);
+  border-color: rgba(238,152,22,1);
+}
+
+/* Texte des liens */
+.text-primary {
+  color: #007bff;
+}
+
+.text-primary:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Message d'erreur */
+.text-danger {
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card-header {
+    font-size: 1.2rem;
+  }
+}

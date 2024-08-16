@@ -1,0 +1,67 @@
+<div class="bg-light">
+  <div class="container mt-1">
+    <ng-template #errors>
+      <div class="text-danger"> {{errorMessage}} </div>
+    </ng-template>
+    <div class="card" *ngIf="products; else errors">
+      <div class="card-header text-white"> Products List</div>
+      <div class="card-body">
+        <form [formGroup]="searchFormGroup" (ngSubmit)="handeleSearchProducts()">
+          <div class="input-group">
+            <label class="input-group-text text-white">Keyword:</label>
+            <input type="text" class="form-control" formControlName="keyword">
+            <button class="btn btn-info">
+              <i class="btn bi-search text-white"></i>
+            </button>
+          </div>
+        </form>
+        <table class="table table-striped">
+          <thead>
+          <tr class="text-center">
+            <th>Identifiant du produit</th>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Prix</th>
+            <th>Promotion</th>
+            <th >Delete</th>
+            <th >Update</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let p of products" class="text-center">
+            <th>{{p.id}}</th>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.category}}</td>
+            <td>
+              <i *ngIf="p.promotion" class="bi-patch-check-fill text-success"></i>
+
+            </td>
+
+            <td >
+              <button (click)="handleDeleteProduct(p)" class="btn btn-danger" >
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+
+            <td >
+              <button (click)="handleEditProduct(p)" class="btn btn-info" >
+                <i class="bi bi-pen text-white"></i>
+              </button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-center">
+          <ul class="nav nav-pills">
+            <li *ngFor="let item of [].constructor(this.totalPage); let i=index">
+              <a (click)="gotoPage(i)" [ngClass]="i==currentPage?'btn-info1':' btn-outline-info1'" class="btn ms-2 mt-1">{{i}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

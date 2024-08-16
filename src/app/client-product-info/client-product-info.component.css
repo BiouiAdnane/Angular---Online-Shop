@@ -1,0 +1,159 @@
+.container {
+  padding-top: 30px;
+  min-height: 100vh;
+}
+
+.image-container {
+  background-color: #f0f0f0; /* Gris clair */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.info-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+h2 {
+  color: #333;
+  font-weight: bold;
+  border-bottom: 4px solid #00aaff; /* Bleu ciel */
+  display: inline-block;
+}
+
+.category {
+  color: #ff6f00; /* Orange vif */
+  background-color: #ffe0b2; /* Orange clair */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.price {
+  color: #4caf50; /* Vert vif */
+  background-color: #e8f5e9; /* Vert clair */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.promotion {
+  color: #d32f2f; /* Rouge vif */
+  background-color: #ffcdd2; /* Rouge clair */
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+
+
+.color-container {
+  margin-top: 20px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-tile {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-tile.selected {
+  transform: scale(1.1);
+  border: 2px solid #00aaff; /* Bleu ciel */
+}
+
+.color-tile:hover {
+  transform: scale(1.1);
+}
+
+.add-to-cart-container {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn-primary1 {
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary1:hover {
+  background-color: #00aaff;
+  color: #fff;
+}
+.btn-primary{
+  background-color: #00aaff;
+  color: #fff;
+}
+
+/* Section des avis clients */
+.reviews-container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.stars {
+  color: #ffa500;
+  font-size: 1.5rem;
+}
+
+.review p {
+  margin: 0;
+}
+
+/* Section des produits similaires */
+.related-products .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.related-products .card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.related-products .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Section de livraison et retours */
+.shipping-returns {
+  background-color: #eef6f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.shipping-returns a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.shipping-returns a:hover {
+  text-decoration: underline;
+}
+.card-img-top{
+  height: 250px;
+}

@@ -1,0 +1,36 @@
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-body p {
+  margin-bottom: 0.5rem;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.col-md-3 {
+  background: rgb(248, 193, 108);
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0; /* Positionner l'élément en haut de la fenêtre lors du défilement */
+  z-index: 1000; /* Pour s'assurer que le filtre reste au-dessus des autres éléments */
+}
+
+.btn{
+  background: rgba(238,152,22,1);
+  color: white;
+}
+.text-success{
+  font-size: 1.2rem;
+  font-weight: bold;
+}

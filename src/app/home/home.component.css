@@ -1,0 +1,138 @@
+/* Header avec Logo */
+header {
+  background: linear-gradient(90deg, rgba(253,56,20,1) 0%, rgba(238,152,22,1) 37%, rgba(36,202,235,1) 100%);
+}
+.btn{
+  background: rgba(238,152,22,1);
+  color: white;
+}
+.icone1{
+  color: rgba(238,152,22,1);
+  font-size: 1.7rem;
+}
+.bg-primary1{
+  background: linear-gradient(90deg, rgba(253,56,20,1) 0%, rgba(238,152,22,1) 37%, rgba(238,152,22,1) 100%);
+}
+.bg-danger1{
+  background: linear-gradient(90deg, rgba(238,152,22,1) 0%, rgba(238,152,22,1) 37%, rgba(36,202,235,1) 100%);
+}
+header img {
+  max-width: 100px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+}
+
+/* Section Services */
+.services .card-body i {
+  color: #007bff;
+}
+
+.services .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Section Promotions */
+.promotions .promotion-box {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.promotions .promotion-box:hover {
+  transform: scale(1.05);
+}
+
+/* Section Témoignages */
+.testimonials .card-body {
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.testimonials .card-text {
+  font-style: italic;
+  color: #495057;
+}
+
+/* Section Newsletter */
+.newsletter h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  color: #ced4da;
+}
+
+.newsletter .form-control {
+  max-width: 400px;
+  border-radius: 0;
+}
+
+.newsletter .btn-primary {
+  border-radius: 0;
+}
+
+/* Section Catégories de Produits */
+.categories .category-box {
+  transition: transform 0.3s ease-in-out;
+}
+
+.categories .category-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Section Produits Vedettes */
+.featured-products .product-card img {
+  border-radius: 5px;
+}
+
+.featured-products .product-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.featured-products .product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Section Blog/Conseils */
+.blog .blog-card img {
+  border-radius: 5px;
+}
+
+.blog .blog-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Section Marques Partenaires */
+.brands img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.brands img:hover {
+  transform: scale(1.1);
+}
+
+/* Section App Mobile */
+.app-mobile h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.app-mobile p {
+  font-size: 1.2rem;
+}
