@@ -53,7 +53,7 @@ Here are some screenshots of the application:
 
 ### 🆕 New Arrivals
 ![New Arrivals](./image/nouveau-image.png)
-*Showcase of the latest products added to the store.*
+*Showcase of the latest informations added to the store.*
 
 ### 📞 Contact
 ![Contact](./image/contact-image.png)
