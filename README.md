@@ -1,31 +1,109 @@
-<<<<<<< HEAD
-# Angular-----Online-Shop
-=======
-# ProjectTestAngular
+# 🛒 Angular Online Shop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+<p align="center">
+  <img src="./image/logo.png" alt="Logo" width="250px">
+</p>
 
-## Development server
+ 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Welcome to the **Angular Online Shop**! This project is a modern online store developed with **Angular**. It provides a responsive and user-friendly interface for customers to browse products, manage their shopping cart, and complete their orders smoothly and securely. The site is designed for both customers and administrators, who can manage products, promotions, and more.
 
-## Build
+## 🚀 Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- 🛍️ **Product Catalog**: Browse a wide range of products with detailed descriptions, images, and prices.
+- 🛒 **Shopping Cart Management**: Add, modify, or remove items from your cart with ease.
+- 🔒 **Checkout Process**: Securely finalize your purchases through a simple and intuitive checkout process.
+- 🔑 **Authentication**: Register and log in for a personalized shopping experience.
+- 🎁 **Promotions**: Special offers and discounts are highlighted to enhance the shopping experience.
+- 🆕 **New Arrivals**: Stay updated with the latest products added to the store.
+- 📞 **Contact Section**: Easily get in touch with the store's support team.
 
-## Running unit tests
+## 🛠️ Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular CLI**: Version 15.1.4 used for scaffolding and managing the project.
+- **HTML, CSS, TypeScript**: For building the user interface and application logic.
+- **Bootstrap**: For responsive and consistent styling across all pages.
 
-## Running end-to-end tests
+## 📸 Preview
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Here are some screenshots of the application:
 
-## Further help
+### 🔑 Authentication
+![Authentication](./image/auth-image.png)
+*Login and registration page.*
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> 0a1c378 (Online Shop - E-Commerce Website)
+### 🏠 Home Page
+![Home Page](./image/acceuil-image.png)
+*The homepage showcasing the product catalog and various sections.*
+
+### 🛍️ Product List
+![Product Management](./image/produit-image.png)
+*Product list interface for clients.*
+
+### 🛒 Checkout Process
+![Checkout Process](./image/acheter-image.png)
+*The checkout page where users can finalize their purchases.*
+
+### 🎁 Promotions
+![Promotions](./image/promotion-image.png)
+*Section dedicated to ongoing promotions and special offers.*
+
+### 🆕 New Arrivals
+![New Arrivals](./image/nouveau-image.png)
+*Showcase of the latest informations added to the store.*
+
+### 📞 Contact
+![Contact](./image/contact-image.png)
+*Contact page for customer support and inquiries.*
+
+### 🛍️ Product Management
+![Product Management](./image/liste-produit.png)
+*Product management interface for administrators.*
+
+### 🛍️ Adding New Product
+![Product Management](./image/ajouter-produit.png)
+*Product management interface for administrators.*
+
+### 🛍️ Update Product
+![Product Management](./image/modifier-produit.png)
+*Product management interface for administrators.*
+
+## 🚀 Installation and Usage
+
+To install and run this project locally, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/BiouiAdnane/Angular---Online-Shop.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd Angular---Online-Shop
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+4. Run the application:
+   ```bash
+   ng serve
+
+5. Access the application in your browser:
+   ```bash
+   http://localhost:4200
+
+## 🤝 Contribution
+
+Contributions are welcome! To report a bug or suggest an enhancement, please open an issue in this repository. Feel free to communicate with us regarding the issue, and we can discuss it further. Pull requests are also welcome.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## 📧 Contact
+
+For any questions or inquiries, please contact [biouiadnane@gmail.com](mailto:biouiadnane@gmail.com).
+
